@@ -1,0 +1,987 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PointCloudRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\BoundingVolume.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\EstimateNormals.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\Geometry3D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\HalfEdgeTriangleMesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\Image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\ImageFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\IntersectionTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\ISSKeypoints.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\KDTreeFlann.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\Line3D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\LineSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\LineSetFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\MeshBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\Octree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\PointCloud.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\PointCloudCluster.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\PointCloudFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\PointCloudPlanarPatchDetection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\PointCloudSegmentation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\Qhull.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\RGBDImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\RGBDImageFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\SurfaceReconstructionAlphaShape.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\SurfaceReconstructionBallPivoting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\SurfaceReconstructionPoisson.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\TetraMesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\TetraMeshFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\TriangleMesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\TriangleMeshDeformation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\TriangleMeshFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\TriangleMeshSimplification.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\TriangleMeshSubdivide.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\VoxelGrid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\geometry\VoxelGridFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\CompilerInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\Console.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\CPUInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\Download.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\Eigen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\Extract.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\ExtractZIP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\FileSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\Helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\IJsonConvertible.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\ISAInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\Logging.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\Parallel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\ProgressBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\Random.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\utility\Timer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\app\Viewer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\BitmapWindowSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Button.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Checkbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\ColorEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Combobox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Dialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Events.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\FileDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\FileDialogNative.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Font.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\GLFWWindowSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Gui.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\ImageWidget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\ImguiFilamentBridge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Label.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Label3D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Layout.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\ListView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Menu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\MenuImgui.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\NativeLinux.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\NativeWin32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\NumberEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\PickPointsInteractor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\ProgressBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\RadioButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\SceneWidget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Slider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\StackedWidget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\TabControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Task.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\TextEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Theme.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\ToggleSwitch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\TreeView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\UIImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\VectorEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Widget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\WidgetProxy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\WidgetStack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\gui\Window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\FilamentCamera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\FilamentEngine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\FilamentEntitiesMods.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\FilamentGeometryBuffersBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\FilamentRenderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\FilamentRenderToBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\FilamentResourceManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\FilamentScene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\FilamentView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\LineSetBuffers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\PointCloudBuffers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\filament\TriangleMeshBuffers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\CameraInteractorLogic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\CameraSphereInteractorLogic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\ColorGrading.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\Gradient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\IBLRotationInteractorLogic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\LightDirectionInteractorLogic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\Material.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\MaterialModifier.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\MatrixInteractorLogic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\ModelInteractorLogic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\Open3DScene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\Renderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\RendererHandle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\rendering\RotationInteractorLogic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\GeometryRenderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\ImageMaskShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\ImageShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\NormalShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\PhongShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\PickingShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\RGBDImageShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\ShaderWrapper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\Simple2DShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\SimpleBlackShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\SimpleShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\TexturePhongShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\shader\TextureSimpleShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\utility\ColorMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\utility\Draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\utility\DrawGeometry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\utility\GLHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\utility\PointCloudPicker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\utility\SelectionPolygon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\utility\SelectionPolygonVolume.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\GuiSettingsModel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\GuiSettingsView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\GuiVisualizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\GuiWidgets.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\MessageProcessor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\O3DVisualizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\O3DVisualizerSelections.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\RenderOption.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\RenderOptionWithEditing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\ViewControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\ViewControlWithCustomAnimation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\ViewControlWithEditing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\ViewParameters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\ViewTrajectory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\Visualizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\VisualizerCallback.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\VisualizerRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\VisualizerWithCustomAnimation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\VisualizerWithEditing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\VisualizerWithKeyCallback.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="open3d\visualization\visualizer\VisualizerWithVertexSelection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="open3d\geometry\BoundingVolume.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\Geometry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\Geometry2D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\Geometry3D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\HalfEdgeTriangleMesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\Image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\IntersectionTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\KDTreeFlann.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\KDTreeSearchParam.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\Keypoint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\Line3D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\LineSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\MeshBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\Octree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\PointCloud.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\Qhull.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\RGBDImage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\TetraMesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\TriangleMesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\geometry\VoxelGrid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\CompilerInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Console.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\CPUInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Download.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Eigen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Extract.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\ExtractZIP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\FileSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\IJsonConvertible.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\ISAInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Logging.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\MiniVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Optional.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Overload.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Parallel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\ParallelScan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Preprocessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\ProgressBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\ProgressReporters.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Random.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\utility\Timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\app\Viewer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Application.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\BitmapWindowSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Button.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Checkbox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Color.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\ColorEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Combobox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Dialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Events.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\FileDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Font.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\GLFWWindowSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Gui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\ImageWidget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\ImguiFilamentBridge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Label.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Label3D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Layout.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\ListView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Menu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\MenuBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\MenuImgui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\MenuMacOS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Native.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\NumberEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\PickPointsInteractor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\ProgressBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\RadioButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\SceneWidget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Slider.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\StackedWidget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\TabControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Task.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\TextEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Theme.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\ToggleSwitch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\TreeView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\UIImage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\VectorEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Widget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\WidgetProxy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\WidgetStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\Window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\gui\WindowSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\filament\FilamentCamera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\filament\FilamentEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\filament\FilamentEntitiesMods.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\filament\FilamentGeometryBuffersBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\filament\FilamentRenderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\filament\FilamentRenderToBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\filament\FilamentResourceManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\filament\FilamentScene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\filament\FilamentView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\CameraInteractorLogic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\CameraSphereInteractorLogic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\ColorGrading.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\Gradient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\IBLRotationInteractorLogic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\Light.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\LightDirectionInteractorLogic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\Material.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\MaterialModifier.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\MaterialRecord.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\MatrixInteractorLogic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\Model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\ModelInteractorLogic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\Open3DScene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\Renderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\RendererHandle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\RendererStructs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\RenderToBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\RotationInteractorLogic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\Scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\rendering\View.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\GeometryRenderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\ImageMaskShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\ImageShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\NormalShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\PhongShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\PickingShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\RGBDImageShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\ShaderWrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\Simple2DShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\SimpleBlackShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\SimpleShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\TexturePhongShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\shader\TextureSimpleShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\utility\ColorMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\utility\Draw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\utility\DrawGeometry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\utility\GLHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\utility\PointCloudPicker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\utility\SelectionPolygon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\utility\SelectionPolygonVolume.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\GuiSettingsModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\GuiSettingsView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\GuiVisualizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\GuiWidgets.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\MessageProcessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\O3DVisualizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\O3DVisualizerSelections.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\RenderOption.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\RenderOptionWithEditing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\ViewControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\ViewControlWithCustomAnimation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\ViewControlWithEditing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\ViewParameters.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\ViewTrajectory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\Visualizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\VisualizerWithCustomAnimation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\VisualizerWithEditing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\VisualizerWithKeyCallback.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\visualization\visualizer\VisualizerWithVertexSelection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
