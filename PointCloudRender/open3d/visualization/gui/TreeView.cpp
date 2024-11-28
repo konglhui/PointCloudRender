@@ -59,7 +59,7 @@ Size CheckableTextTreeCell::CalcPreferredSize(
     auto check_pref = impl_->checkbox_->CalcPreferredSize(context, constraints);
     auto label_pref = impl_->label_->CalcPreferredSize(context, constraints);
     return Size(check_pref.width + label_pref.width,
-                std::max(check_pref.height, label_pref.height));
+                (std::max)(check_pref.height, label_pref.height));
 }
 
 void CheckableTextTreeCell::Layout(const LayoutContext &context) {
@@ -118,8 +118,8 @@ Size LUTTreeCell::CalcPreferredSize(const LayoutContext &context,
     auto label_pref = impl_->label_->CalcPreferredSize(context, constraints);
     auto color_pref = impl_->color_->CalcPreferredSize(context, constraints);
     return Size(check_pref.width + label_pref.width + color_pref.width,
-                std::max(check_pref.height,
-                         std::max(label_pref.height, color_pref.height)));
+                (std::max)(check_pref.height,
+                         (std::max)(label_pref.height, color_pref.height)));
 }
 
 void LUTTreeCell::Layout(const LayoutContext &context) {
@@ -130,7 +130,7 @@ void LUTTreeCell::Layout(const LayoutContext &context) {
     auto color_width =
             int(std::ceil(impl_->color_width_percent * float(frame.width)));
     auto min_color_width = 8 * context.theme.font_size;
-    color_width = std::max(min_color_width, color_width);
+    color_width = (std::max)(min_color_width, color_width);
     if (frame.width - (color_width + check_width) < 8 * em) {
         color_width = frame.width - check_width - 8 * em;
     }
@@ -182,7 +182,7 @@ Size ColormapTreeCell::CalcPreferredSize(const LayoutContext &context,
     auto number_pref = impl_->value_->CalcPreferredSize(context, constraints);
     auto color_pref = impl_->color_->CalcPreferredSize(context, constraints);
     return Size(number_pref.width + color_pref.width,
-                std::max(number_pref.height, color_pref.height));
+                (std::max)(number_pref.height, color_pref.height));
 }
 
 void ColormapTreeCell::Layout(const LayoutContext &context) {

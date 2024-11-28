@@ -49,7 +49,7 @@ void O3DVisualizerSelections::RemoveSet(int index) {
         scene->RemoveGeometry(sets_[index].name);
     }
     sets_.erase(sets_.begin() + index);
-    current_set_index_ = std::min(int(sets_.size()) - 1, current_set_index_);
+    current_set_index_ = (std::min)(int(sets_.size()) - 1, current_set_index_);
 
     if (!sets_.empty() && scene->HasGeometry(sets_[current_set_index_].name)) {
         scene->ShowGeometry(sets_[current_set_index_].name, true);

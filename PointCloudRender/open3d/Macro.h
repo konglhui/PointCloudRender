@@ -1,4 +1,4 @@
-// ----------------------------------------------------------------------------
+﻿// ----------------------------------------------------------------------------
 // -                        Open3D: www.open3d.org                            -
 // ----------------------------------------------------------------------------
 // Copyright (c) 2018-2023 www.open3d.org
@@ -46,3 +46,7 @@
 //     OPEN3D_ASSERT(condition && "Error message");
 // For host-only code, consider using utility::LogError();
 #define OPEN3D_ASSERT(...) assert((__VA_ARGS__))
+
+#ifndef M_PI
+#define M_PI 3.1415926
+#endif

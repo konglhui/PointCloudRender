@@ -54,7 +54,7 @@ Eigen::Vector3d CalcIndexColor(uint32_t idx) {
 }
 
 Eigen::Vector3d SetColorForIndex(uint32_t idx) {
-    return CalcIndexColor(std::min(kMaxPickableIndex, idx));
+    return CalcIndexColor((std::min)(kMaxPickableIndex, idx));
 }
 
 uint32_t GetIndexForColor(geometry::Image *image, int x, int y) {
@@ -444,8 +444,8 @@ void PickPointsInteractor::OnPickImageDone(
             // Find the min/max y, so we can avoid excess looping.
             int minY = 1000000, maxY = -1000000;
             for (auto &p : info.polygon) {
-                minY = std::min(minY, p.y);
-                maxY = std::max(maxY, p.y);
+                minY = (std::min)(minY, p.y);
+                maxY = (std::max)(maxY, p.y);
             }
             // Duplicate the first point so for easy indexing
             info.polygon.push_back(info.polygon[0]);

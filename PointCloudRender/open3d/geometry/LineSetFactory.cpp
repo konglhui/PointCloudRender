@@ -46,7 +46,7 @@ std::shared_ptr<LineSet> LineSet::CreateFromTriangleMesh(
     std::unordered_set<Eigen::Vector2i, utility::hash_eigen<Eigen::Vector2i>>
             inserted_edges;
     auto InsertEdge = [&](int vidx0, int vidx1) {
-        Eigen::Vector2i edge(std::min(vidx0, vidx1), std::max(vidx0, vidx1));
+        Eigen::Vector2i edge((std::min)(vidx0, vidx1), (std::max)(vidx0, vidx1));
         if (inserted_edges.count(edge) == 0) {
             inserted_edges.insert(edge);
             line_set->lines_.push_back(Eigen::Vector2i(vidx0, vidx1));
@@ -108,7 +108,7 @@ std::shared_ptr<LineSet> LineSet::CreateFromTetraMesh(const TetraMesh &mesh) {
     std::unordered_set<Eigen::Vector2i, utility::hash_eigen<Eigen::Vector2i>>
             inserted_edges;
     auto InsertEdge = [&](int vidx0, int vidx1) {
-        Eigen::Vector2i edge(std::min(vidx0, vidx1), std::max(vidx0, vidx1));
+        Eigen::Vector2i edge((std::min)(vidx0, vidx1), (std::max)(vidx0, vidx1));
         if (inserted_edges.count(edge) == 0) {
             inserted_edges.insert(edge);
             line_set->lines_.push_back(Eigen::Vector2i(vidx0, vidx1));

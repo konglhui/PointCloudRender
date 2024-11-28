@@ -269,7 +269,7 @@ Eigen::Vector3uint8 ColorToUint8(const Eigen::Vector3d &color) {
     Eigen::Vector3uint8 rgb;
     for (int i = 0; i < 3; ++i) {
         rgb[i] = uint8_t(
-                std::round(std::min(1., std::max(0., color(i))) * 255.));
+                std::round((std::min)(1., (std::max)(0., color(i))) * 255.));
     }
     return rgb;
 }

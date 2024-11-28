@@ -48,7 +48,7 @@ std::vector<int> CalcMajor(const LayoutContext& context,
             if (preferred.width >= Widget::DIM_GROW) {
                 num_other_maxgrow_items += 1;
             } else {
-                other = std::max(other, preferred.width);
+                other = (std::max)(other, preferred.width);
             }
         }
     } else {
@@ -57,7 +57,7 @@ std::vector<int> CalcMajor(const LayoutContext& context,
             if (preferred.height >= Widget::DIM_GROW) {
                 num_other_maxgrow_items += 1;
             } else {
-                other = std::max(other, preferred.height);
+                other = (std::max)(other, preferred.height);
             }
         }
     }
@@ -96,7 +96,7 @@ std::vector<Size> CalcColumnSizes(
         int w = 0, h = 0;
         for (auto& widget : col) {
             auto preferred = widget->CalcPreferredSize(context, constraints);
-            w = std::max(w, preferred.width);
+            w = (std::max)(w, preferred.width);
             h += preferred.height;
         }
         sizes.push_back(Size(w, h));
@@ -240,7 +240,7 @@ Size Layout1D::CalcPreferredSize(const LayoutContext& context,
         minor = impl_->minor_axis_size_;
     }
 
-    int total_spacing = impl_->spacing_ * std::max(0, int(major.size()) - 1);
+    int total_spacing = impl_->spacing_ * (std::max)(0, int(major.size()) - 1);
     int major_size = 0;
     for (auto& size : major) {
         major_size += size;
@@ -284,7 +284,7 @@ void Layout1D::Layout(const LayoutContext& context) {
     } else {
         frame_size = frame.width - impl_->margins_.GetHoriz();
     }
-    int total_spacing = impl_->spacing_ * std::max(0, int(major.size()) - 1);
+    int total_spacing = impl_->spacing_ * (std::max)(0, int(major.size()) - 1);
     auto total_extra = frame_size - total - total_spacing;
     if (num_stretch > 0 && frame_size > total) {
         auto stretch = total_extra / num_stretch;
@@ -331,7 +331,7 @@ void Layout1D::Layout(const LayoutContext& context) {
     if (impl_->dir_ == VERT) {
         int minor = frame.width - impl_->margins_.GetHoriz();
         for (size_t i = 0; i < children.size(); ++i) {
-            int h = std::max(children[i]->CalcMinimumSize(context).height,
+            int h = (std::max)(children[i]->CalcMinimumSize(context).height,
                              major[i]);
             children[i]->SetFrame(Rect(x, y, minor, h));
             y += major[i] + impl_->spacing_;
@@ -422,7 +422,7 @@ Size CollapsableVert::CalcPreferredSize(const LayoutContext& context,
     }
 
     auto& margins = GetMargins();
-    return Size(std::max(text_width, pref.width) + margins.GetHoriz(),
+    return Size((std::max)(text_width, pref.width) + margins.GetHoriz(),
                 text_height + pref.height + margins.GetVert());
 }
 
@@ -587,11 +587,11 @@ Size VGrid::CalcPreferredSize(const LayoutContext& context,
         auto& sz = column_sizes[i];
         width += sz.width;
         auto v_spacing = (int(columns[i].size()) - 1) * impl_->spacing_;
-        height = std::max(height, sz.height) + v_spacing;
+        height = (std::max)(height, sz.height) + v_spacing;
     }
     width += (int(column_sizes.size()) - 1) * impl_->spacing_;
-    width = std::max(width, 0);  // in case width or height has no items
-    height = std::max(height, 0);
+    width = (std::max)(width, 0);  // in case width or height has no items
+    height = (std::max)(height, 0);
 
     if (impl_->preferred_width_ < Widget::DIM_GROW) {
         width = impl_->preferred_width_;

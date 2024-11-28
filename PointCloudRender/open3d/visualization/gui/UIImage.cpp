@@ -232,8 +232,8 @@ UIImage::DrawParams UIImage::CalcDrawParams(
     if (impl_->texture_ != visualization::rendering::TextureHandle::kBad) {
         switch (impl_->scaling_) {
             case Scaling::NONE: {
-                float w = std::min(float(frame.width), width_px);
-                float h = std::min(float(frame.height), height_px);
+                float w = (std::min)(float(frame.width), width_px);
+                float h = (std::min)(float(frame.height), height_px);
                 params.width = w;
                 params.height = h;
                 params.u0 = impl_->u0_;
@@ -270,8 +270,8 @@ UIImage::DrawParams UIImage::CalcDrawParams(
                 break;
             }
         }
-        float x = std::max(0.0f, (float(frame.width) - params.width) / 2.0f);
-        float y = std::max(0.0f, (float(frame.height) - params.height) / 2.0f);
+        float x = (std::max)(0.0f, (float(frame.width) - params.width) / 2.0f);
+        float y = (std::max)(0.0f, (float(frame.height) - params.height) / 2.0f);
         params.pos_x = frame.x + x;
         params.pos_y = frame.y + y;
     } else {

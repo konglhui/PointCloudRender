@@ -63,8 +63,8 @@ Size TabControl::CalcPreferredSize(const LayoutContext& context,
     int width = 0, height = 0;
     for (auto& child : GetChildren()) {
         auto size = child->CalcPreferredSize(context, constraints);
-        width = std::max(width, size.width);
-        height = std::max(height, size.height);
+        width = (std::max)(width, size.width);
+        height = (std::max)(height, size.height);
     }
 
     return Size(width, height + CalcTabHeight(context.theme) + 2);

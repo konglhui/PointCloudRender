@@ -38,8 +38,8 @@ std::shared_ptr<TriangleMesh> TriangleMesh::SubdivideMidpoint(
                                    utility::hash_eigen<Eigen::Vector2i>>&
                         new_verts,
                 int vidx0, int vidx1) {
-                int min = std::min(vidx0, vidx1);
-                int max = std::max(vidx0, vidx1);
+                int min = (std::min)(vidx0, vidx1);
+                int max = (std::max)(vidx0, vidx1);
                 Eigen::Vector2i edge(min, max);
                 if (new_verts.count(edge) == 0) {
                     mesh->vertices_.push_back(0.5 * (mesh->vertices_[min] +

@@ -92,7 +92,7 @@ IndexBufferHandle GeometryBuffersBuilder::CreateIndexBuffer(
     auto& engine = EngineInstance::GetInstance();
     auto& resource_mgr = EngineInstance::GetResourceManager();
 
-    size_t n_indices = std::min(max_index, n_subsamples);
+    size_t n_indices = (std::min)(max_index, n_subsamples);
     // Use double for precision, since float can only accurately represent
     // integers up to 2^24 = 16 million, and we have buffers with more points
     // than that.

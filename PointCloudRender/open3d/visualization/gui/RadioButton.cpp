@@ -57,7 +57,7 @@ const char* RadioButton::GetSelectedValue() const {
 
 void RadioButton::SetSelectedIndex(int index) {
     if (index >= 0) {
-        impl_->selected_index_ = std::min(int(impl_->items_.size() - 1), index);
+        impl_->selected_index_ = (std::min)(int(impl_->items_.size() - 1), index);
     }
 }
 
@@ -77,7 +77,7 @@ Size RadioButton::CalcPreferredSize(const LayoutContext& context,
                                              float(constraints.width), 0.0,
                                              item.c_str());
         if (impl_->type_ == Type::VERT) {
-            size.x = std::max(size.x, item_size.x);
+            size.x = (std::max)(size.x, item_size.x);
             size.y += fh;
         } else {
             size.x += fh + item_size.x + spacing;

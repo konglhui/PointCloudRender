@@ -47,7 +47,7 @@ double Slider::GetDoubleValue() const { return impl_->value_; }
 
 void Slider::SetValue(double val) {
     impl_->value_ =
-            std::max(impl_->min_value_, std::min(impl_->max_value_, val));
+            (std::max)(impl_->min_value_, (std::min)(impl_->max_value_, val));
     if (impl_->type_ == INT) {
         impl_->value_ = std::round(impl_->value_);
     }

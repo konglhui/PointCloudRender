@@ -92,7 +92,7 @@ float CallGLFWGetWindowContentScale(GLFWwindow* w) {
      (GLFW_VERSION_MAJOR == 3 && GLFW_VERSION_MINOR >= 3))
     float xscale, yscale;
     glfwGetWindowContentScale(w, &xscale, &yscale);
-    return std::min(xscale, yscale);
+    return (std::min)(xscale, yscale);
 #else
     return 1.0f;
 #endif  // GLFW version >= 3.3

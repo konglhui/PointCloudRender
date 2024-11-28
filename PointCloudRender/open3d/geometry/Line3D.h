@@ -291,7 +291,7 @@ public:
     /// will be made 0 and a positive value greater than Length() will take
     /// the value of Length()
     double ClampParameter(double parameter) const override {
-        return std::max(parameter, 0.);
+        return (std::max)(parameter, 0.);
     }
 
     /// \brief Verifies that a given parameter value is valid for the semantics
@@ -414,7 +414,7 @@ public:
     /// will be made 0 and a positive value greater than Length() will take
     /// the value of Length()
     double ClampParameter(double parameter) const override {
-        return std::max(std::min(parameter, length_), 0.);
+        return (std::max)((std::min)(parameter, length_), 0.);
     }
 
     /// \brief Verifies that a given parameter value is valid for the semantics

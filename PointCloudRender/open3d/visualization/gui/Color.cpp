@@ -50,7 +50,7 @@ const float* Color::GetPointer() const { return rgba_; }
 float* Color::GetMutablePointer() { return rgba_; }
 
 Color Color::Lightened(float amount) {
-    amount = std::max(0.0f, std::min(1.0f, amount));
+    amount = (std::max)(0.0f, (std::min)(1.0f, amount));
     return Color((1.0f - amount) * GetRed() + amount * 1.0f,
                  (1.0f - amount) * GetGreen() + amount * 1.0f,
                  (1.0f - amount) * GetBlue() + amount * 1.0f, GetAlpha());

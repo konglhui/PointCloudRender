@@ -1092,7 +1092,7 @@ void GuiVisualizer::Layout(const gui::LayoutContext &context) {
             context, gui::Widget::Constraints());
     gui::Rect lightSettingsRect(r.width - LIGHT_SETTINGS_WIDTH, r.y,
                                 LIGHT_SETTINGS_WIDTH,
-                                std::min(r.height, light_settings_size.height));
+                                (std::min)(r.height, light_settings_size.height));
     impl_->settings_.wgt_base->SetFrame(lightSettingsRect);
 
     Super::Layout(context);

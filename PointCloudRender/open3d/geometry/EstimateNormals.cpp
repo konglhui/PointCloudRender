@@ -83,7 +83,7 @@ Eigen::Vector3d ComputeEigenvector1(const Eigen::Matrix3d &A,
     double absM11 = std::abs(m11);
     double max_abs_comp;
     if (absM00 >= absM11) {
-        max_abs_comp = std::max(absM00, absM01);
+        max_abs_comp = (std::max)(absM00, absM01);
         if (max_abs_comp > 0) {
             if (absM00 >= absM01) {
                 m01 /= m00;
@@ -99,7 +99,7 @@ Eigen::Vector3d ComputeEigenvector1(const Eigen::Matrix3d &A,
             return U;
         }
     } else {
-        max_abs_comp = std::max(absM11, absM01);
+        max_abs_comp = (std::max)(absM11, absM01);
         if (max_abs_comp > 0) {
             if (absM11 >= absM01) {
                 m01 /= m11;
@@ -153,7 +153,7 @@ Eigen::Vector3d FastEigen3x3(const Eigen::Matrix3d &covariance) {
         double det = (b00 * c00 - A(0, 1) * c01 + A(0, 2) * c02) / (p * p * p);
 
         double half_det = det * 0.5;
-        half_det = std::min(std::max(half_det, -1.0), 1.0);
+        half_det = (std::min)((std::max)(half_det, -1.0), 1.0);
 
         double angle = std::acos(half_det) / (double)3;
         double const two_thirds_pi = 2.09439510239319549;
@@ -376,7 +376,7 @@ void PointCloud::OrientNormalsConsistentTangentPlane(
     std::vector<WeightedEdge> delaunay_graph;
     std::unordered_set<size_t> graph_edges;
     auto EdgeIndex = [&](size_t v0, size_t v1) -> size_t {
-        return std::min(v0, v1) * points_.size() + std::max(v0, v1);
+        return (std::min)(v0, v1) * points_.size() + (std::max)(v0, v1);
     };
     auto AddEdgeToDelaunayGraph = [&](size_t v0, size_t v1) {
         v0 = pt_map[v0];

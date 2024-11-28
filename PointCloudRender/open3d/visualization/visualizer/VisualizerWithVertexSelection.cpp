@@ -808,7 +808,7 @@ Eigen::Vector3d VisualizerWithVertexSelection::CalcDragDelta(double winX,
 }
 
 void VisualizerWithVertexSelection::SetPointSize(double size) {
-    size = std::max(size, MIN_POINT_SIZE);
+    size = (std::max)(size, MIN_POINT_SIZE);
     pick_point_opts_.SetPointSize(size);
     auto *opt = &utility_renderer_opts_[ui_points_renderer_ptr_];
     opt->SetPointSize(size);

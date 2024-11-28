@@ -531,7 +531,7 @@ std::shared_ptr<PointCloud> PointCloud::FarthestPointDownSample(
         double max_dist = 0;
         for (size_t j = 0; j < num_points; j++) {
             double dist = (points_[j] - selected).squaredNorm();
-            distances[j] = std::min(distances[j], dist);
+            distances[j] = (std::min)(distances[j], dist);
             if (distances[j] > max_dist) {
                 max_dist = distances[j];
                 farthest_index = j;

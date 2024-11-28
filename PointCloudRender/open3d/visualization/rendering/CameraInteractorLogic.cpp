@@ -96,8 +96,8 @@ void CameraInteractorLogic::Zoom(int dy, DragType drag_type) {
         old_fov = float(camera_->GetFieldOfView());
     }
     float new_fov = old_fov + d_fov;
-    new_fov = std::max(5.0f, new_fov);
-    new_fov = std::min(90.0f, new_fov);
+    new_fov = (std::max)(5.0f, new_fov);
+    new_fov = (std::min)(90.0f, new_fov);
 
     float to_radians = float(M_PI / 180.0);
     float near = float(camera_->GetNear());

@@ -241,8 +241,8 @@ MenuBase::ItemId MenuImgui::Draw(const DrawContext &context,
         auto shortcut = CalcShortcutText(item.shortcut_key_);
         auto size2 = font->CalcTextSizeA(float(context.theme.font_size), 10000,
                                          10000, shortcut.c_str());
-        name_width = std::max(name_width, int(std::ceil(size1.x)));
-        shortcut_width = std::max(shortcut_width, int(std::ceil(size2.x)));
+        name_width = (std::max)(name_width, int(std::ceil(size1.x)));
+        shortcut_width = (std::max)(shortcut_width, int(std::ceil(size2.x)));
     }
     int width = padding + name_width + 2 * em + shortcut_width + 2 * em +
                 int(std::ceil(1.5 * em)) + padding;  // checkbox

@@ -32,8 +32,8 @@ Size StackedWidget::CalcPreferredSize(const LayoutContext& context,
     Size size(0, 0);
     for (auto child : GetChildren()) {
         auto sz = child->CalcPreferredSize(context, constraints);
-        size.width = std::max(size.width, sz.width);
-        size.height = std::max(size.height, sz.height);
+        size.width = (std::max)(size.width, sz.width);
+        size.height = (std::max)(size.height, sz.height);
     }
     return size;
 }

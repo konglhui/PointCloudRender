@@ -222,7 +222,7 @@ std::tuple<Eigen::Vector4d, std::vector<size_t>> PointCloud::SegmentPlane(
                 result = this_result;
                 best_plane_model = plane_model;
                 if (result.fitness_ < 1.0) {
-                    break_iteration = std::min(
+                    break_iteration = (std::min)(
                             log(1 - probability) /
                                     log(1 - pow(result.fitness_, ransac_n)),
                             (double)num_iterations);

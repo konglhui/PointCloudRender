@@ -125,7 +125,7 @@ private:
             }
             frames.emplace_back(x, y, pref.width, pref.height);
             x += pref.width + spacing_;
-            lineHeight = std::max(lineHeight, pref.height);
+            lineHeight = (std::max)(lineHeight, pref.height);
         }
         return frames;
     }
@@ -221,7 +221,7 @@ public:
         auto name_pref = name_->CalcPreferredSize(context, constraints);
         int w = check_pref.width + name_pref.width + GroupWidth(context.theme) +
                 TimeWidth(context.theme);
-        return Size(w, std::max(check_pref.height, name_pref.height));
+        return Size(w, (std::max)(check_pref.height, name_pref.height));
     }
 
     void Layout(const LayoutContext &context) override {
@@ -994,8 +994,8 @@ Ctrl-alt-click to polygon select)";
         // below.
         AddGroup(group_name);  // regenerates if necessary
         bool update_for_time = (min_time_ == max_time_ && time != max_time_);
-        min_time_ = std::min(min_time_, time);
-        max_time_ = std::max(max_time_, time);
+        min_time_ = (std::min)(min_time_, time);
+        max_time_ = (std::max)(max_time_, time);
         if (time != 0.0) {
             UpdateTimeUIRange();
             settings.time_panel->SetVisible(true);
@@ -1075,8 +1075,8 @@ Ctrl-alt-click to polygon select)";
         min_time_ = max_time_ = 0.0;
         for (size_t i = 0; i < objects_.size(); ++i) {
             auto &o = objects_[i];
-            min_time_ = std::min(min_time_, o.time);
-            max_time_ = std::max(max_time_, o.time);
+            min_time_ = (std::min)(min_time_, o.time);
+            max_time_ = (std::max)(max_time_, o.time);
             groups.insert(o.group);
         }
         if (min_time_ == max_time_) {
@@ -1550,9 +1550,9 @@ Ctrl-alt-click to polygon select)";
         }
 
         auto bbox_extend = scene_->GetScene()->GetBoundingBox().GetExtent();
-        auto psize = double(std::max(5, px)) * 0.000666 *
-                     std::max(bbox_extend.x(),
-                              std::max(bbox_extend.y(), bbox_extend.z()));
+        auto psize = double((std::max)(5, px)) * 0.000666 *
+                     (std::max)(bbox_extend.x(),
+                              (std::max)(bbox_extend.y(), bbox_extend.z()));
         selections_->SetPointSize(psize);
 
         scene_->SetPickablePointSize(px);
@@ -1979,8 +1979,8 @@ Ctrl-alt-click to polygon select)";
         settings.play->SetEnabled(enabled);
 
         settings.time_slider->SetLimits(min_time_, max_time_);
-        ui_state_.current_time = std::min(
-                max_time_, std::max(min_time_, ui_state_.current_time));
+        ui_state_.current_time = (std::min)(
+                max_time_, (std::max)(min_time_, ui_state_.current_time));
         UpdateTimeUI();
     }
 
@@ -2030,8 +2030,8 @@ Ctrl-alt-click to polygon select)";
     void UpdateSelectionSetList() {
         size_t n = selections_->GetNumberOfSets();
         int idx = settings.selection_sets->GetSelectedIndex();
-        idx = std::max(0, idx);
-        idx = std::min(idx, int(n) - 1);
+        idx = (std::max)(0, idx);
+        idx = (std::min)(idx, int(n) - 1);
 
         std::vector<std::string> items;
         items.reserve(n);

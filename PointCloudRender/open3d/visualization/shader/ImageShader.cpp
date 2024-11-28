@@ -24,7 +24,7 @@ uint8_t ConvertColorFromFloatToUnsignedChar(float color) {
     if (std::isnan(color)) {
         return 0;
     } else {
-        float unified_color = std::min(1.0f, std::max(0.0f, color));
+        float unified_color = (std::min)(1.0f, (std::max)(0.0f, color));
         return (uint8_t)(unified_color * 255.0f);
     }
 }
@@ -234,7 +234,7 @@ bool ImageShaderForImage::PrepareBinding(const geometry::Geometry &geometry,
             const int max_depth = option.image_max_depth_;
             for (int i = 0; i < image.height_ * image.width_; i++) {
                 uint16_t *p = (uint16_t *)(image.data_.data() + i * 2);
-                double depth = std::min(double(*p) / double(max_depth), 1.0);
+                double depth = (std::min)(double(*p) / double(max_depth), 1.0);
                 Eigen::Vector3d color = global_color_map.GetColor(depth);
                 render_image.data_[i * 3] = (uint8_t)(color(0) * 255);
                 render_image.data_[i * 3 + 1] = (uint8_t)(color(1) * 255);

@@ -271,8 +271,8 @@ Window::Window(const std::string& title,
         ws_flags |= WindowSystem::FLAG_TOPMOST;
     }
 
-    int initial_width = std::max(10, width);
-    int initial_height = std::max(10, height);
+    int initial_width = (std::max)(10, width);
+    int initial_height = (std::max)(10, height);
     auto& ws = Application::GetInstance().GetWindowSystem();
     impl_->window_ = ws.CreateOSWindow(this, initial_width, initial_height,
                                        title.c_str(), ws_flags);
@@ -635,8 +635,8 @@ void Window::ShowDialog(std::shared_ptr<Dialog> dlg) {
         if (h == 0) {
             h = pref.height;
         }
-        w = std::min(w, int(std::round(0.8 * content_rect.width)));
-        h = std::min(h, int(std::round(0.8 * content_rect.height)));
+        w = (std::min)(w, int(std::round(0.8 * content_rect.width)));
+        h = (std::min)(h, int(std::round(0.8 * content_rect.height)));
         dlg->SetFrame(gui::Rect((content_rect.width - w) / 2,
                                 (content_rect.height - h) / 2, w, h));
         dlg->Layout(context);
@@ -989,7 +989,7 @@ void Window::OnResize() {
             ImGui::PopFont();
             ImGui::EndFrame();
 
-            w = std::min(screen_size.width,
+            w = (std::min)(screen_size.width,
                          int(std::round(pref.width / impl_->imgui_.scaling)));
             // screen_height is the screen height, not the usable screen height.
             // If we cannot call glfwGetMonitorWorkarea(), then we need to guess
@@ -997,7 +997,7 @@ void Window::OnResize() {
             // is often a global menubar (Linux/GNOME, macOS) or a toolbar
             // (Windows). A toolbar is somewhere around 2 - 3 ems.
             int unusable_height = 4 * impl_->theme_.font_size;
-            h = std::min(screen_size.height - unusable_height,
+            h = (std::min)(screen_size.height - unusable_height,
                          int(std::round(pref.height / impl_->imgui_.scaling)));
             ws.SetWindowSize(impl_->window_, w, h);
         }

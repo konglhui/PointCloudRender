@@ -53,8 +53,8 @@ std::pair<bool, double> Image::FloatValueAt(double u, double v) const {
          v > (double)(height_ - 1))) {
         return std::make_pair(false, 0.0);
     }
-    int ui = std::max(std::min((int)u, width_ - 2), 0);
-    int vi = std::max(std::min((int)v, height_ - 2), 0);
+    int ui = (std::max)((std::min)((int)u, width_ - 2), 0);
+    int vi = (std::max)((std::min)((int)v, height_ - 2), 0);
     double pu = u - ui;
     double pv = v - vi;
     float value[4] = {*PointerAt<float>(ui, vi), *PointerAt<float>(ui, vi + 1),

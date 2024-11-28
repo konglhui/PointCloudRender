@@ -49,7 +49,7 @@ Widget::DrawResult ProgressBar::Draw(const DrawContext& context) {
                    float(frame.GetBottom()) - ImGui::GetScrollY()),
             color, rounding);
     float x = float(frame.x) + float(frame.width) * impl_->value_;
-    x = std::max(x, float(frame.x + rounding));
+    x = (std::max)(x, float(frame.x + rounding));
 
     ImGui::GetWindowDrawList()->AddRectFilled(
             ImVec2(float(frame.x), float(frame.y) - ImGui::GetScrollY()),

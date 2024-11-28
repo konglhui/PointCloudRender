@@ -401,7 +401,7 @@ void Visualizer::CaptureDepthImage(const std::string &filename /* = ""*/,
                     2.0 * z_near * z_far /
                     (z_far + z_near -
                      (2.0 * (double)p_depth[j] - 1.0) * (z_far - z_near));
-            p_png[j] = (uint16_t)std::min(std::round(depth_scale * z_depth),
+            p_png[j] = (uint16_t)(std::min)(std::round(depth_scale * z_depth),
                                           (double)INT16_MAX);
         }
     }

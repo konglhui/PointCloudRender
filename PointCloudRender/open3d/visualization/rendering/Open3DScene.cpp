@@ -84,7 +84,7 @@ void RecreateAxis(Scene* scene,
     if (axis_length < 0.001) {  // avoid div by zero errors in CreateAxes()
         axis_length = 1.0;
     }
-    axis_length = std::max(axis_length, 0.25 * bounds.GetCenter().norm());
+    axis_length = (std::max)(axis_length, 0.25 * bounds.GetCenter().norm());
     auto mesh = CreateAxisGeometry(axis_length);
     MaterialRecord mat;
     mat.shader = "defaultUnlit";

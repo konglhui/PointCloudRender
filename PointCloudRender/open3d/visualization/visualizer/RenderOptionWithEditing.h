@@ -28,11 +28,11 @@ public:
     bool ConvertToJsonValue(Json::Value &value) const override;
     bool ConvertFromJsonValue(const Json::Value &value) override;
     void IncreaseSphereSize() {
-        pointcloud_picker_sphere_size_ = std::min(
+        pointcloud_picker_sphere_size_ = (std::min)(
                 pointcloud_picker_sphere_size_ * 2.0, PICKER_SPHERE_SIZE_MAX);
     }
     void DecreaseSphereSize() {
-        pointcloud_picker_sphere_size_ = std::max(
+        pointcloud_picker_sphere_size_ = (std::max)(
                 pointcloud_picker_sphere_size_ * 0.5, PICKER_SPHERE_SIZE_MIN);
     }
 

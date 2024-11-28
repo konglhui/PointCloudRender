@@ -461,7 +461,7 @@ private:
             for (int v = y - radius_px; v < y + radius_px; ++v) {
                 for (int u = x - radius_px; u < x + radius_px; ++u) {
                     float z = *depth_img->PointerAt<float>(x, y);
-                    win_z = std::min(win_z, z);
+                    win_z = (std::min)(win_z, z);
                 }
             }
         }

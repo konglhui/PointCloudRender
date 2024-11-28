@@ -234,7 +234,7 @@ void VoxelGrid::CreateFromOctree(const Octree &octree) {
     origin_ = octree.origin_;
     voxels_.clear();
     for (const auto &it : map_node_to_node_info) {
-        voxel_size_ = std::min(voxel_size_, it.second->size_);
+        voxel_size_ = (std::min)(voxel_size_, it.second->size_);
     }
 
     // Convert nodes to voxels

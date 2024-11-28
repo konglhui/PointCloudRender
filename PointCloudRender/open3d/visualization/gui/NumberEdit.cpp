@@ -70,7 +70,7 @@ void NumberEdit::SetLimits(double min_value, double max_value) {
         impl_->min_value_ = min_value;
         impl_->max_value_ = max_value;
     }
-    impl_->value_ = std::min(max_value, std::max(min_value, impl_->value_));
+    impl_->value_ = (std::min)(max_value, (std::max)(min_value, impl_->value_));
 }
 
 int NumberEdit::GetDecimalPrecision() { return impl_->num_decimal_digits_; }
@@ -93,7 +93,7 @@ Size NumberEdit::CalcPreferredSize(const LayoutContext& context,
             int(std::ceil(std::log10(std::abs(impl_->min_value_))));
     int num_max_digits =
             int(std::ceil(std::log10(std::abs(impl_->max_value_))));
-    int num_digits = std::max(6, std::max(num_min_digits, num_max_digits));
+    int num_digits = (std::max)(6, (std::max)(num_min_digits, num_max_digits));
     if (impl_->min_value_ < 0) {
         num_digits += 1;
     }

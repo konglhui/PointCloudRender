@@ -50,7 +50,7 @@ void Gradient::SetPoints(const std::vector<Gradient::Point>& points) {
             utility::LogWarning(
                     "Gradient point {} must be in range [0.0, 1.0], clamping",
                     points_[i].value);
-            points_[i].value = std::max(0.0f, std::min(1.0f, points_[i].value));
+            points_[i].value = (std::max)(0.0f, (std::min)(1.0f, points_[i].value));
         }
     }
     textures_.clear();

@@ -83,7 +83,7 @@ Size Label::CalcPreferredSize(const LayoutContext& context,
         auto line_end = impl_->text_.find('\n');
         auto em = int(std::round(font->FontSize));
         float wrap_width = float(
-                std::min(constraints.width, PREFERRED_WRAP_WIDTH_EM * em));
+                (std::min)(constraints.width, PREFERRED_WRAP_WIDTH_EM * em));
         float spacing = ImGui::GetTextLineHeightWithSpacing() -
                         ImGui::GetTextLineHeight();
         do {
@@ -99,7 +99,7 @@ Size Label::CalcPreferredSize(const LayoutContext& context,
                 line_start = line_end + 1;
                 line_end = impl_->text_.find('\n', line_start);
             }
-            size.x = std::max(size.x, sz.x);
+            size.x = (std::max)(size.x, sz.x);
             size.y += sz.y + spacing;
         } while (line_start != std::string::npos);
 

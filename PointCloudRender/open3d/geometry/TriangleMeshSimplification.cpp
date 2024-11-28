@@ -288,8 +288,8 @@ std::shared_ptr<TriangleMesh> TriangleMesh::SimplifyQuadricDecimation(
     auto edge_triangle_count = GetEdgeToTrianglesMap();
     auto AddPerpPlaneQuadric = [&](int vidx0, int vidx1, int vidx2,
                                    double area) {
-        int min = std::min(vidx0, vidx1);
-        int max = std::max(vidx0, vidx1);
+        int min = (std::min)(vidx0, vidx1);
+        int max = (std::max)(vidx0, vidx1);
         Eigen::Vector2i edge(min, max);
         if (edge_triangle_count[edge].size() != 1) {
             return;
@@ -339,7 +339,7 @@ std::shared_ptr<TriangleMesh> TriangleMesh::SimplifyQuadricDecimation(
             const double cost0 = Qbar.Eval(v0);
             const double cost1 = Qbar.Eval(v1);
             const double costmid = Qbar.Eval(vmid);
-            cost = std::min(cost0, std::min(cost1, costmid));
+            cost = (std::min)(cost0, (std::min)(cost1, costmid));
             if (cost == costmid) {
                 vbar = vmid;
             } else if (cost == cost0) {
@@ -354,8 +354,8 @@ std::shared_ptr<TriangleMesh> TriangleMesh::SimplifyQuadricDecimation(
     std::unordered_set<Eigen::Vector2i, utility::hash_eigen<Eigen::Vector2i>>
             added_edges;
     auto AddEdge = [&](int vidx0, int vidx1, bool update) {
-        const int min = std::min(vidx0, vidx1);
-        const int max = std::max(vidx0, vidx1);
+        const int min = (std::min)(vidx0, vidx1);
+        const int max = (std::max)(vidx0, vidx1);
         const Eigen::Vector2i edge(min, max);
         if (update || added_edges.count(edge) == 0) {
             const auto cost = compute_cost_vbar(edge).first;

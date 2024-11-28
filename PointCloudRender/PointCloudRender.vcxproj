@@ -86,7 +86,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32;WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -101,7 +101,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32;WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -116,7 +116,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32;WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -131,7 +131,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32;WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -165,9 +165,7 @@
     <ClCompile Include="open3d\geometry\Qhull.cpp" />
     <ClCompile Include="open3d\geometry\RGBDImage.cpp" />
     <ClCompile Include="open3d\geometry\RGBDImageFactory.cpp" />
-    <ClCompile Include="open3d\geometry\SurfaceReconstructionAlphaShape.cpp" />
     <ClCompile Include="open3d\geometry\SurfaceReconstructionBallPivoting.cpp" />
-    <ClCompile Include="open3d\geometry\SurfaceReconstructionPoisson.cpp" />
     <ClCompile Include="open3d\geometry\TetraMesh.cpp" />
     <ClCompile Include="open3d\geometry\TetraMeshFactory.cpp" />
     <ClCompile Include="open3d\geometry\TriangleMesh.cpp" />
@@ -177,13 +175,9 @@
     <ClCompile Include="open3d\geometry\TriangleMeshSubdivide.cpp" />
     <ClCompile Include="open3d\geometry\VoxelGrid.cpp" />
     <ClCompile Include="open3d\geometry\VoxelGridFactory.cpp" />
-    <ClCompile Include="open3d\utility\CompilerInfo.cpp" />
     <ClCompile Include="open3d\utility\Console.cpp" />
     <ClCompile Include="open3d\utility\CPUInfo.cpp" />
-    <ClCompile Include="open3d\utility\Download.cpp" />
     <ClCompile Include="open3d\utility\Eigen.cpp" />
-    <ClCompile Include="open3d\utility\Extract.cpp" />
-    <ClCompile Include="open3d\utility\ExtractZIP.cpp" />
     <ClCompile Include="open3d\utility\FileSystem.cpp" />
     <ClCompile Include="open3d\utility\Helper.cpp" />
     <ClCompile Include="open3d\utility\IJsonConvertible.cpp" />
@@ -257,7 +251,6 @@
     <ClCompile Include="open3d\visualization\rendering\Gradient.cpp" />
     <ClCompile Include="open3d\visualization\rendering\IBLRotationInteractorLogic.cpp" />
     <ClCompile Include="open3d\visualization\rendering\LightDirectionInteractorLogic.cpp" />
-    <ClCompile Include="open3d\visualization\rendering\Material.cpp" />
     <ClCompile Include="open3d\visualization\rendering\MaterialModifier.cpp" />
     <ClCompile Include="open3d\visualization\rendering\MatrixInteractorLogic.cpp" />
     <ClCompile Include="open3d\visualization\rendering\ModelInteractorLogic.cpp" />
@@ -329,13 +322,10 @@
     <ClInclude Include="open3d\geometry\TetraMesh.h" />
     <ClInclude Include="open3d\geometry\TriangleMesh.h" />
     <ClInclude Include="open3d\geometry\VoxelGrid.h" />
-    <ClInclude Include="open3d\utility\CompilerInfo.h" />
+    <ClInclude Include="open3d\Macro.h" />
     <ClInclude Include="open3d\utility\Console.h" />
     <ClInclude Include="open3d\utility\CPUInfo.h" />
-    <ClInclude Include="open3d\utility\Download.h" />
     <ClInclude Include="open3d\utility\Eigen.h" />
-    <ClInclude Include="open3d\utility\Extract.h" />
-    <ClInclude Include="open3d\utility\ExtractZIP.h" />
     <ClInclude Include="open3d\utility\FileSystem.h" />
     <ClInclude Include="open3d\utility\Helper.h" />
     <ClInclude Include="open3d\utility\IJsonConvertible.h" />
@@ -414,7 +404,6 @@
     <ClInclude Include="open3d\visualization\rendering\IBLRotationInteractorLogic.h" />
     <ClInclude Include="open3d\visualization\rendering\Light.h" />
     <ClInclude Include="open3d\visualization\rendering\LightDirectionInteractorLogic.h" />
-    <ClInclude Include="open3d\visualization\rendering\Material.h" />
     <ClInclude Include="open3d\visualization\rendering\MaterialModifier.h" />
     <ClInclude Include="open3d\visualization\rendering\MaterialRecord.h" />
     <ClInclude Include="open3d\visualization\rendering\MatrixInteractorLogic.h" />

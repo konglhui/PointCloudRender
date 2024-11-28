@@ -50,7 +50,7 @@ void ViewControl::SetViewMatrices(
         z_near_ =
                 constant_z_near_ > 0
                         ? constant_z_near_
-                        : std::max(0.01 * bounding_box_.GetMaxExtent(),
+                        : (std::max)(0.01 * bounding_box_.GetMaxExtent(),
                                    distance_ -
                                            3.0 * bounding_box_.GetMaxExtent());
         z_far_ = constant_z_far_ > 0
@@ -195,7 +195,7 @@ bool ViewControl::ConvertFromPinholeCameraParameters(
     double old_fov = field_of_view_;
     field_of_view_ = fov_rad * 180.0 / M_PI;
     if (!allow_arbitrary) {
-        field_of_view_ = std::max(std::min(field_of_view_, FIELD_OF_VIEW_MAX),
+        field_of_view_ = (std::max)((std::min)(field_of_view_, FIELD_OF_VIEW_MAX),
                                   FIELD_OF_VIEW_MIN);
         if (GetProjectionType() == ProjectionType::Orthogonal) {
             field_of_view_ = old_fov;
@@ -218,7 +218,7 @@ bool ViewControl::ConvertFromPinholeCameraParameters(
                         bounding_box_.GetMaxExtent();
     zoom_ = ideal_zoom;
     if (!allow_arbitrary) {
-        zoom_ = std::max(std::min(ideal_zoom, ZOOM_MAX), ZOOM_MIN);
+        zoom_ = (std::max)((std::min)(ideal_zoom, ZOOM_MAX), ZOOM_MIN);
     }
     view_ratio_ = zoom_ * bounding_box_.GetMaxExtent();
     distance_ = view_ratio_ / std::tan(field_of_view_ * 0.5 / 180.0 * M_PI);
@@ -262,7 +262,7 @@ void ViewControl::SetProjectionParameters() {
 
 void ViewControl::ChangeFieldOfView(double step) {
     field_of_view_ =
-            std::max(std::min(field_of_view_ + step * FIELD_OF_VIEW_STEP,
+            (std::max)((std::min)(field_of_view_ + step * FIELD_OF_VIEW_STEP,
                               FIELD_OF_VIEW_MAX),
                      FIELD_OF_VIEW_MIN);
     SetProjectionParameters();
@@ -304,7 +304,7 @@ geometry::Ray3D ViewControl::UnprojectPoint(double x, double y) const {
 }
 
 void ViewControl::Scale(double scale) {
-    zoom_ = std::max(std::min(zoom_ + scale * ZOOM_STEP, ZOOM_MAX), ZOOM_MIN);
+    zoom_ = (std::max)((std::min)(zoom_ + scale * ZOOM_STEP, ZOOM_MAX), ZOOM_MIN);
     SetProjectionParameters();
 }
 

@@ -84,13 +84,7 @@
     <ClCompile Include="open3d\geometry\RGBDImageFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="open3d\geometry\SurfaceReconstructionAlphaShape.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="open3d\geometry\SurfaceReconstructionBallPivoting.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="open3d\geometry\SurfaceReconstructionPoisson.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="open3d\geometry\TetraMesh.cpp">
@@ -120,25 +114,13 @@
     <ClCompile Include="open3d\geometry\VoxelGridFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="open3d\utility\CompilerInfo.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="open3d\utility\Console.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="open3d\utility\CPUInfo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="open3d\utility\Download.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="open3d\utility\Eigen.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="open3d\utility\Extract.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="open3d\utility\ExtractZIP.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="open3d\utility\FileSystem.cpp">
@@ -360,9 +342,6 @@
     <ClCompile Include="open3d\visualization\rendering\LightDirectionInteractorLogic.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="open3d\visualization\rendering\Material.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="open3d\visualization\rendering\MaterialModifier.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -569,25 +548,13 @@
     <ClInclude Include="open3d\geometry\VoxelGrid.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="open3d\utility\CompilerInfo.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="open3d\utility\Console.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="open3d\utility\CPUInfo.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="open3d\utility\Download.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="open3d\utility\Eigen.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="open3d\utility\Extract.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="open3d\utility\ExtractZIP.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="open3d\utility\FileSystem.h">
@@ -824,9 +791,6 @@
     <ClInclude Include="open3d\visualization\rendering\LightDirectionInteractorLogic.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="open3d\visualization\rendering\Material.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="open3d\visualization\rendering\MaterialModifier.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -981,6 +945,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="open3d\visualization\visualizer\VisualizerWithVertexSelection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="open3d\Macro.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

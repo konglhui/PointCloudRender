@@ -53,18 +53,18 @@ std::pair<double, double> Line3D::SlabAABBBase(
      * https://tavianator.com/2011/ray_box.html */
     double t_x0 = x_inv_ * (box.min_bound_.x() - origin().x());
     double t_x1 = x_inv_ * (box.max_bound_.x() - origin().x());
-    double t_min = std::min(t_x0, t_x1);
-    double t_max = std::max(t_x0, t_x1);
+    double t_min = (std::min)(t_x0, t_x1);
+    double t_max = (std::max)(t_x0, t_x1);
 
     double t_y0 = y_inv_ * (box.min_bound_.y() - origin().y());
     double t_y1 = y_inv_ * (box.max_bound_.y() - origin().y());
-    t_min = std::max(t_min, std::min(t_y0, t_y1));
-    t_max = std::min(t_max, std::max(t_y0, t_y1));
+    t_min = (std::max)(t_min, (std::min)(t_y0, t_y1));
+    t_max = (std::min)(t_max, (std::max)(t_y0, t_y1));
 
     double t_z0 = z_inv_ * (box.min_bound_.z() - origin().z());
     double t_z1 = z_inv_ * (box.max_bound_.z() - origin().z());
-    t_min = std::max(t_min, std::min(t_z0, t_z1));
-    t_max = std::min(t_max, std::max(t_z0, t_z1));
+    t_min = (std::max)(t_min, (std::min)(t_z0, t_z1));
+    t_max = (std::min)(t_max, (std::max)(t_z0, t_z1));
 
     return {t_min, t_max};
 }
@@ -128,7 +128,7 @@ utility::optional<double> Line3D::ExactAABB(
     // Return the lowest parameter
     double minimum = parameters[contained_indices[0]];
     for (auto i : contained_indices) {
-        minimum = std::min(minimum, parameters[i]);
+        minimum = (std::min)(minimum, parameters[i]);
     }
     return minimum;
 }
@@ -296,7 +296,7 @@ utility::optional<double> Ray3D::SlabAABB(
     double t_min = std::get<0>(t);
     double t_max = std::get<1>(t);
 
-    t_min = std::max(0., t_min);
+    t_min = (std::max)(0., t_min);
 
     if (t_max >= t_min) return t_min;
     return {};
@@ -349,7 +349,7 @@ utility::optional<double> Segment3D::SlabAABB(
     double t_min = std::get<0>(t);
     double t_max = std::get<1>(t);
 
-    t_min = std::max(0., t_min);
+    t_min = (std::max)(0., t_min);
 
     if (t_max >= t_min && t_min <= length_) return t_min;
     return {};
@@ -366,13 +366,13 @@ utility::optional<double> Segment3D::ExactAABB(
 }
 
 AxisAlignedBoundingBox Segment3D::GetBoundingBox() const {
-    Eigen::Vector3d min{std::min(origin().x(), end_point_.x()),
-                        std::min(origin().y(), end_point_.y()),
-                        std::min(origin().z(), end_point_.z())};
+    Eigen::Vector3d min{(std::min)(origin().x(), end_point_.x()),
+                        (std::min)(origin().y(), end_point_.y()),
+                        (std::min)(origin().z(), end_point_.z())};
 
-    Eigen::Vector3d max{std::max(origin().x(), end_point_.x()),
-                        std::max(origin().y(), end_point_.y()),
-                        std::max(origin().z(), end_point_.z())};
+    Eigen::Vector3d max{(std::max)(origin().x(), end_point_.x()),
+                        (std::max)(origin().y(), end_point_.y()),
+                        (std::max)(origin().z(), end_point_.z())};
     return {min, max};
 }
 
